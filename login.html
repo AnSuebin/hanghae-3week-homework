@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+  </head>
+  <body>
+    <form action="" id="login">
+      <label for="firstName">First name :</label><br />
+      <input type="text" id="firstName" required /><br />
+      <label for="lastName">Last Name :</label><br />
+      <input type="text" id="lastName" required /><br />
+      <label for="Email">Email :</label><br />
+      <input type="text" id="Email" required /><br />
+
+      <label for="Gender"></label>
+      Gender: <input type="radio" name="Gender" value="Male" />Male
+      <input type="radio" name="Gender" value="Female" />Female <br />
+
+      <label for="Favorite">Favorite :</label>
+      <input id="Favorite" type="checkbox" name="Favorite" value="HTML" />HTML
+      <input id="Favorite" type="checkbox" name="Favorite" value="JAVA" />JAVA
+      <input
+        id="Favorite"
+        type="checkbox"
+        name="Favorite"
+        value="JavaScript"
+      />JavaScript<br />
+
+      <span>Browswer :</span>
+      <select name="Browswer" form="login">
+        <option value="chrome">크롬</option>
+        <option value="safari">사파리</option>
+        <option value="edge">엣지</option></select
+      ><br />
+
+      <label for="Birthday">Birthday :</label>
+      <input id="Birthday" type="date" name="Birthday" /><br />
+      <button class="btn">제출</button>
+      <script>
+        let b = document.querySelector(".btn");
+        b.addEventListener("click", () => {
+          alert("제출 완료!");
+        });
+      </script>
+    </form>
+  </body>
+</html>
